@@ -1,0 +1,1 @@
+export { KeystaticApp as default } from "@keystatic/next/app";
