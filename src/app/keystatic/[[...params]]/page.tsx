@@ -1,1 +1,4 @@
-export { KeystaticApp as default } from "@keystatic/next/app";
+"use client";
+import { KeystaticApp } from "@keystatic/next/ui/app";
+
+export default KeystaticApp;
