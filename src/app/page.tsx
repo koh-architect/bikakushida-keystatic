@@ -12,12 +12,12 @@ function getPlants() {
       const raw = fs.readFileSync(path.join(dir, filename), "utf-8");
       const { data } = matter(raw);
       const serialized = Object.fromEntries(
-  Object.entries(data).map(([k, v]) => [
-    k,
-    v instanceof Date ? v.toISOString().split("T")[0] : v,
-  ])
-);
-  return { slug: filename.replace(".md", ""), ...serialized } as any;
+        Object.entries(data).map(([k, v]) => [
+          k,
+          v instanceof Date ? v.toISOString().split("T")[0] : v,
+        ])
+      );
+      return { slug: filename.replace(".md", ""), ...serialized } as any;
     });
 }
 
