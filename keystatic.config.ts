@@ -1,9 +1,10 @@
 import { config, collection, fields } from "@keystatic/core";
 
 export default config({
-  storage: {
+  sstorage: {
   kind: "github",
   repo: "koh-architect/bikakushida-keystatic",
+  branchPrefix: "main",
 },
 
   collections: {
