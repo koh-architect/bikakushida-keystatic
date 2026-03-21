@@ -12,7 +12,6 @@ export default config({
       slugField: "title",
       path: "content/plants/*",
       format: { data: "yaml" },
-      ],
       schema: {
         title: fields.slug({ name: { label: "株名" } }),
         species: fields.text({ label: "品種", validation: { isRequired: false } }),
