@@ -11,13 +11,7 @@ export default config({
       label: "株の管理",
       slugField: "title",
       path: "content/plants/*",
-      format: { frontmatter: "yaml" },
-      entryLayout: "content",
-      columns: [
-        { field: "title", label: "株名" },
-        { field: "species", label: "品種" },
-        { field: "acquired_date", label: "入手日" },
-        { field: "status", label: "ステータス" },
+      format: { data: "yaml" },
       ],
       schema: {
         title: fields.slug({ name: { label: "株名" } }),
