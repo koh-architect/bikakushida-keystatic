@@ -2,10 +2,13 @@ import { config, collection, fields } from "@keystatic/core";
 
 export default config({
   storage: {
-  kind: "github",
-  repo: "koh-architect/bikakushida-keystatic",
-  branchPrefix: "main",
-},
+    kind: "github",
+    repo: "koh-architect/bikakushida-keystatic",
+    branchPrefix: "main",
+  },
+
+  // 👇 これを追加（最重要）
+  siteUrl: "https://bikakushida-key.netlify.app",
 
   collections: {
     plants: collection({
