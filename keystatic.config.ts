@@ -7,8 +7,6 @@ export default config({
     branchPrefix: "main",
   },
 
-  // 👇 これを追加（最重要）
-  siteUrl: "https://bikakushida-key.netlify.app",
 
   collections: {
     plants: collection({
