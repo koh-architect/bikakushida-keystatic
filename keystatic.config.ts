@@ -4,9 +4,7 @@ export default config({
   storage: {
     kind: "github",
     repo: "koh-architect/bikakushida-keystatic",
-    branchPrefix: "main",
   },
-
 
   collections: {
     plants: collection({
